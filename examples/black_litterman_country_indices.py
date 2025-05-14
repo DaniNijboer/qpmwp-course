@@ -144,9 +144,9 @@ W.corr()
 
 P = pd.DataFrame(
     data=[
-        [0, 1, 0, 0, 0],                # Absolute view on JP
-        [1, -0.25, -0.25, -0.25, -0.25],  # Relative view on US vs. others
-        [1, -1, 0, 0, 0],               # Relative view on US vs. JP
+        [0, 1, 0, 0, 0],                    # Absolute view on JP
+        [1, -0.25, -0.25, -0.25, -0.25],    # Relative view on US vs. others
+        [1, -1, 0, 0, 0],                   # Relative view on US vs. JP
     ],
     index=['View1', 'View2', 'View3'],
     columns=country_names,
@@ -173,7 +173,7 @@ q
 # -------------------------
 # Tuning parameters
 tau_psi = 0.05
-tau_omega = 0.05
+tau_omega = 0.001
 # -------------------------
 
 # Uncertainty of the prior
